@@ -1,5 +1,4 @@
 # using Alpine Edge
-FROM mrmiss/OnLyNovaBot:latest
 
 #
 # Clone repo and prepare working directory
