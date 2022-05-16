@@ -1,5 +1,5 @@
 # using Alpine Edge
-FROM onlynova01/onlynovabot:latest
+FROM main/onlynovabot:latest
 #
 # Clone repo and prepare working directory
 #
