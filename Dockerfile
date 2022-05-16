@@ -1,5 +1,5 @@
 # using Alpine Edge
-FROM OnLyNova01/OnLyNovaBot:latest
+FROM /OnLyNovaBot:latest
 #
 # Clone repo and prepare working directory
 #
