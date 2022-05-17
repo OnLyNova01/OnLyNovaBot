@@ -8,7 +8,7 @@
     <a href="https://github.com/OnLyNova01/OnLyNovaBot/network/members"><img src="https://img.shields.io/github/forks/OnLyNova01/OnLyNovaBot?label=Fork&style=for-the-badge&logo=github" alt="fork" /></a>
     <a href="https://github.com/OnLyNova01/OnLyNovaBot"><img src="https://img.shields.io/github/repo-size/OnLyNova01/OnLyNovaBot?style=for-the-badge&logo=github" alt="size" /></a>
     <a href="https://hub.docker.com/r/mrmiss/OnLyNovaBot"> <img src="https://img.shields.io/docker/image-size/mrmiss/OnLyNovaBot/latest?color=red&label=Docker%20Size&style=for-the-badge&logo=docker&logoColor=white" alt="docker" /></a></br>
-    <a href="https://t.me/userbotindo"> <img src="https://img.shields.io/badge/telegram-Support_Group-blue?style=social&logo=telegram" alt="support" /></a>
+    <a href="https://t.me/NewStoreNova"> <img src="https://img.shields.io/badge/telegram-Support_Group-blue?style=social&logo=telegram" alt="support" /></a>
 </p>
 
 ```
@@ -36,7 +36,7 @@ Easy way to get STRING_SESSION.
 
 ### Run on repl.it
 
-[![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it)](https://replit.com/@KeselekPermen/OnLyNovaBot)
+[![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it)](https://replit.com/@YtPrem7/OnLyNovaBOT)
 
 ### or Run on your terminal
 
