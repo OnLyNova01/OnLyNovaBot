@@ -1,6 +1,6 @@
 {
-  "name": "RAM-UBOT",
-  "description": "[RAM-UBOT] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "OnLyNova BOT",
+  "description": "OnLyNova BOT USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/be5a4a2cb6aac37ca7945.jpg",
   "keywords": [
     "telegram",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ramadhani892/RAM-UBOT",
-  "telegram": "https://t.me/Ramadhaniiiiiii1",
-  "success_url": "https://t.me/ramaupportt",
+  "repository": "https://github.com/OnLyNova01/OnLyNovaBot",
+  "telegram": "https://t.me/OnLyNova",
+  "success_url": "https://t.me/NewStoreNova",
   "stack": "container",
   "env": {
     "API_KEY": {
