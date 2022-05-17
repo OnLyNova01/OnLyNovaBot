@@ -1,2 +1,2 @@
 # using Alpine Edge
-FROM onlynova/novagans1:main
+FROM onlynova/onlynovabot:main
