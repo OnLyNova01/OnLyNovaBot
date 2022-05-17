@@ -1,1 +1,1 @@
-FROM onlynova01/onlynovabot:menu
+FROM ramadhani892/ramubot:master
