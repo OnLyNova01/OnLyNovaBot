@@ -1,2 +1,2 @@
 # using Alpine Edge
-FROM onlynova/onlynovabot:main
+FROM onlynova/onlynovabot:tagname
