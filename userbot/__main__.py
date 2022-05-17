@@ -1,44 +1,59 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License.
-#
-"""Userbot start point"""
+""" Userbot start point """
 
+
+import sys
+import requests
 from importlib import import_module
-from sys import argv
 
-from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-from userbot import LOGS, bot, BOTLOG_CHATID
+from pytgcalls import idle
+
+from userbot import BOT_TOKEN, BOT_VER, ramblacklist
+from userbot import DEVS, LOGS, LOOP, bot, call_py, BOTLOG_CHATID
+from userbot.clients import nova_ubot_on, ramulti
 from userbot.modules import ALL_MODULES
-
-
-INVALID_PH = '\nERROR: The Phone No. entered is INVALID' \
-             '\n Tip: Use Country Code along with number.' \
-             '\n or check your phone number and try again !'
+from userbot.utils import autobot, creatgr, hadeh_ajg
 
 try:
+    client = ramulti()
+    total = 5 - client
     bot.start()
-except PhoneNumberInvalidError:
-    print(INVALID_PH)
-    exit(1)
+    call_py.start()
+    user = bot.get_me()
+    ramblacklist = requests.get(
+        " "
+    ).json()
+    if user.id in ramblacklist:
+        LOGS.warning(
+            "USERBOT TIDAK DAPAT BERJALAN, KARNA LO KONTOL MAKE SEMEMA MENA, BOT LO DI MATIIN HEHEH, LAPORKAN KE @OnLyNova"        )
+        sys.exit(1)
+    if 1826643972 not in DEVS:
+        LOGS.warning(
+            f"EOL\n OnLyNovaBot  versi {BOT_VER}, © copyright by @OnLyNova"
+        )
+        sys.exit(1)
+except Exception as e:
+    LOGS.info(str(e), exc_info=True)
+    sys.exit(1)
 
 for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
-LOGS.info(
-    "Congratulations, your userbot is now running !!"
-    "Test it by type .on or .alive in any chat."
-    "for further assistance, head to https;//t.me/OnLyNova")
+LOGS.info(f"Total Clients = {total} User")
+LOGS.info(f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/OnLyNova")
+LOGS.info(f" OnLyNovaBot  v {BOT_VER} [DAH AKTIF NGENTOT!!!]")
 
+
+LOOP.run_until_complete(nova_ubot_on())
+LOOP.run_until_complete(hadeh_ajg())
 if not BOTLOG_CHATID:
-    LOGS.warning(
-        "Yout BOTLOG_CHATID isn't set yet."
-        "this variable is highly recomended to fill to make sure"
-        "all errors go to your log chat not current chat and considered as a spammer.")
-
-
-if len(argv) not in (1, 3, 4):
+    LOOP.run_until_complete(creatgr())
+if not BOT_TOKEN:
+    LOOP.run_until_complete(autobot())
+idle()
+if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
-    bot.run_until_disconnected()
+    try:
+        bot.run_until_disconnected()
+    except ConnectionError:
+        pass
