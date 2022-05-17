@@ -1,5 +1,6 @@
 # using Alpine Edge
-#
+FROM ramadhani892/ramubot:master
+
 # Clone repo and prepare working directory
 #
 RUN git clone -b main https://github.com/OnLyNova01/onlynovabot /root/userbot
