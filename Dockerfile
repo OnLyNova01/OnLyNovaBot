@@ -1,5 +1,4 @@
 # using Alpine Edge
-FROM ramadhani892/ramubot:menu
 #
 # Clone repo and prepare working directory
 #
