@@ -1,5 +1,5 @@
 # using Alpine Edge
-FROM mrmiss/userbutt:latest
+FROM onlynova01/onlynovabot:latest
 
 #
 # Clone repo and prepare working directory
